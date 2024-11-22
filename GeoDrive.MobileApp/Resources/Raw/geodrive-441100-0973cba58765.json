@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "geodrive-441100",
+  "private_key_id": "0973cba5876519dcab8f87d8051624b9f215ace9",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCZC67GaBC9bK2J\n6gTNNeVFVJHwbOQujvxGUX+byfQsyJ5WBA1z1ECPSRxJ3HT56gG/d5m32PDYCXVx\nmMi3g5TAp283tnqXKufFJVUuSsd4oHmyozsM+4+Z67UbpGQIQu0XhqtYK67okSZh\nlgwqevHyQ2RQ2xwyQ1uSUT20McIy7iB1pEeRKKCd2xDGEzT1Xx06/mwhclepyCT7\nZEXo9bqpmOTodu5PbqVUqQ5M0kgQ4prGoTy+gbKc7APqXUKJm7Q8rln3G5/fnz0z\nFhSrDK9fpBJF0MY7+/+b+i3RMj4LJa8nDy2VEDY/0Y/DqIocfjN+GUEcYCh6SPal\n8s6aQdvfAgMBAAECggEABmZ1xfTwWkbMtq55ylRdXnn40aHXV9eBik+tmZTBAgxw\ni3u6gLEMJoULfbVBkqzFq1dAYoiPTeGOlUd358craQ3qrN0UB47zFIxvbjLdxtgj\nLr38lRobrJEUYlY/tRUja1WMHdeGn+tnoplO44nmGCUKvjmwVkb5C3q1RpXChgGp\nxIqpoyERQrPMyvWdkdapOSBsEqFsOPgeVn2SkibkN1aGfQIrFYt5YAyay5BX0Tao\ndCksIVThKXZyKtlp6RE5Gyyf12n32AMn9igRc9VTaWwF21LIM2JguO/dwzuZC58M\npKR0fdAqxs3QATDOEfSSKKWGPjd4ntHvHL5DvpVZFQKBgQDQeKmeMm6SZSi/0MUr\n22OcE70mo7Fj47TmT+ZqrRdbUKrUemBVtJWMKYAnKT6kmp0UbjXc/D+XkGWOFwck\nakX3sJ61/3LVTov9g/zzBPTGCziyLKK3B3GuNw6y/td+2ZLJDvx8OT2fHb2FXofD\niHdNA+Aq7ooDYrXOrQWbsHgy2wKBgQC78B+f6J9vgemYRzGb8PbzKFDJT7H7x4mv\nF+010Ua9JMu06o6PJDwR/iYf4vROllmLf+sxWDjP8iffrK+6AF4PwQ6og0OlHypl\nvJodtPc+LRBcnorig2MRWmc+amV7OEC9078BqdlkLrLU03DIQ2T1qesHDXqj37st\njQZyqKywTQKBgCK1JBApd006OEmPGXSOxwuyIZiwQhVOUMzTWppCDRRv3rEXWriK\nIye9tQ9QB5TiBOrk2mTbPj8elDnOzaqbYuC08Ad+6wBmXlorwk43cgUS0zKeycxN\nGfkWQ4U7dmcxFAYTT6fi48Z87hOpRFMigjI5RfX/1sxvf7NUDQ35mFlnAoGACan9\nVlG18RvzERuIF4a6jCJklRV+B35pPBG05vGN+6fqubDeB8pLNHmnKDiZa3kbvaqk\nQ3NP6JGBL2VH2/6s146L3GpzjggePAEIw8JMfGwAzWJxrdgnvfqyGGmMMlvgKGK9\nDa7YOOiV1Y/R2tpsVJ2aMlClH8wfaeY4kKjPyHkCgYEAsI4jqBlS8eQKagnHOKy4\nmC38Gsv89m/WpbA6195a5fstmQsaG5Wsix2fa1iUGUZAs5r/337I+0d9K6NLm/aO\nVZ2+bm/+z/0czxHbo31nP68BGJhK2wIuSWGNS0OpNMiHn/RmCnoVcvAORMEH/vG3\nfk97qNfs8p24copETSzknQY=\n-----END PRIVATE KEY-----\n",
+  "client_email": "geodriveiotproject@geodrive-441100.iam.gserviceaccount.com",
+  "client_id": "111269723235142983496",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/geodriveiotproject%40geodrive-441100.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

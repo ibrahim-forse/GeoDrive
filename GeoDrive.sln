@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeoDrive.Core", "GeoDrive.Core\GeoDrive.Core.csproj", "{2B25F926-9425-49C2-80A7-BADBA1D5C1B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoDrive.DroneConsole", "GeoDrive.DroneConsole\GeoDrive.DroneConsole.csproj", "{1B915F1B-BE86-4475-87B5-9A7C3371CEFA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6F839326-3B49-4B22-A2D4-523A2EED0234}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoDrive.MobileApp", "GeoDrive.MobileApp\GeoDrive.MobileApp.csproj", "{29702A21-9240-429E-8E68-B8FB39861200}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2B25F926-9425-49C2-80A7-BADBA1D5C1B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B25F926-9425-49C2-80A7-BADBA1D5C1B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B25F926-9425-49C2-80A7-BADBA1D5C1B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B25F926-9425-49C2-80A7-BADBA1D5C1B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B915F1B-BE86-4475-87B5-9A7C3371CEFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B915F1B-BE86-4475-87B5-9A7C3371CEFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B915F1B-BE86-4475-87B5-9A7C3371CEFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B915F1B-BE86-4475-87B5-9A7C3371CEFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29702A21-9240-429E-8E68-B8FB39861200}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29702A21-9240-429E-8E68-B8FB39861200}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29702A21-9240-429E-8E68-B8FB39861200}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{29702A21-9240-429E-8E68-B8FB39861200}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29702A21-9240-429E-8E68-B8FB39861200}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29702A21-9240-429E-8E68-B8FB39861200}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D0598895-27B5-4B18-B1BB-5F6ACBEACE1D}
+	EndGlobalSection
+EndGlobal

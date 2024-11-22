@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GeoDrive.MobileApp.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                x:Name="myImage"
+                Source="project_app_logo.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="App Logo" />
+
+            <Label
+                Text="Project By"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*" />
+                    <RowDefinition />
+                    <RowDefinition Height="100" />
+                </Grid.RowDefinitions>
+                
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <BoxView Color="White"/>
+                <Label Text="Ibrahim Alfaras"
+                       Style="{StaticResource NamesStyle}"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center" />
+                <BoxView Color="White" Grid.Column="1"/>
+                <Label Grid.Column="1"
+                       Style="{StaticResource NamesStyle}"
+                       Text="Tannaz Asadishad"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center" />
+
+                <BoxView Color="White" Grid.Row="1"/>
+                <Label Grid.Row="1"
+                       Style="{StaticResource NamesStyle}"
+                       Text="Sepideh Abbasi"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center" />
+                <BoxView Color="White" Grid.Row="1"
+                         Grid.Column="1"/>
+
+                <Label Grid.Row="1"
+                       Grid.Column="1"
+                       Style="{StaticResource NamesStyle}"
+                       Text="Samira Salemhesari"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center" />
+            </Grid>
+            
+            <Entry x:Name="locationName"
+                   Placeholder="Your Location"
+                   Completed="OnLocationNameCompleted" />
+
+            <Button
+                x:Name="UploadFileButton"
+                IsEnabled="False"
+                Text="Select Files" 
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Fill" />
+
+            <Label x:Name="FileNameLabel" Text="No file picked yet." />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
