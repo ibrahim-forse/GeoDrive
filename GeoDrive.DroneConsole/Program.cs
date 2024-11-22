@@ -1,5 +1,4 @@
-﻿
-using System.Configuration;
+﻿using System.Configuration;
 using GeoDrive.Core.Services;
 
 namespace GeoDrive.DroneConsole
