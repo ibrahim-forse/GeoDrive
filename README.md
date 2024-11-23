@@ -11,10 +11,10 @@ Cross-platform app framework for building native apps with C#.
 - **Google Drive API**  
   API for managing files in Google Drive.
 
-- **Geolocation API**
+- **Geolocation API**  
   For retrieving the user\'s current location.
 
-- **MVVM Pattern**
+- **MVVM Pattern**  
   Ensures clean separation between the user interface and the business logic.
 
 2.  **Architecture Overview**
