@@ -361,3 +361,5 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/GeoDrive.MobileApp/Resources/Raw/credentials.json
+/GeoDrive.MobileApp/Resources/Raw/geodrive-441100-0973cba58765.json
