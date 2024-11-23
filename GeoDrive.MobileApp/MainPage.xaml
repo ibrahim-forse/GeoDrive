@@ -69,7 +69,7 @@
                 IsEnabled="False"
                 Text="Select Files" 
                 SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
+                Clicked="OnUploadClicked"
                 HorizontalOptions="Fill" />
 
             <Label x:Name="FileNameLabel" Text="No file picked yet." />

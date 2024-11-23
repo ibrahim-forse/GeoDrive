@@ -28,7 +28,7 @@ namespace GeoDrive.MobileApp
             }
         }
 
-        private async void OnCounterClicked(object sender, EventArgs e)
+        private async void OnUploadClicked(object sender, EventArgs e)
         {
             FileNameLabel.TextColor = Color.FromRgb(0, 0, 0);
             UploadFileButton.IsEnabled = false;
