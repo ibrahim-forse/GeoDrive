@@ -68,8 +68,16 @@
                 x:Name="UploadFileButton"
                 IsEnabled="False"
                 Text="Select Files" 
-                SemanticProperties.Hint="Counts the number of times you click"
+                SemanticProperties.Hint="Read Files From Local Storage"
                 Clicked="OnUploadClicked"
+                HorizontalOptions="Fill" />
+
+            <Button
+                x:Name="ResetButton"
+                IsEnabled="False"
+                Text="Reset Location" 
+                SemanticProperties.Hint="Reset Location Information"
+                Clicked="OnResetClicked"
                 HorizontalOptions="Fill" />
 
             <Label x:Name="FileNameLabel" Text="No file picked yet." />

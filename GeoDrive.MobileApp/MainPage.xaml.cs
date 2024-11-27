@@ -7,6 +7,9 @@ namespace GeoDrive.MobileApp
 {
     public partial class MainPage : ContentPage
     {
+        private CancellationTokenSource _cancelTokenSource;
+        private bool _isCheckingLocation;
+
         public MainPage()
         {
             InitializeComponent();
@@ -15,9 +18,27 @@ namespace GeoDrive.MobileApp
 
         public async void SetLocationAsync()
         {
-            var gpsCoordinates = await GetCachedLocation();
+            Tuple<double, double> gpsCoordinates;
+            try
+            {
+                gpsCoordinates = await GetCurrentLocation();
+            }
+            catch
+            {
+                gpsCoordinates = await GetCachedLocation();
+            }
+
             locationName.Text = await GetGeocodeReverseData(gpsCoordinates.Item1, gpsCoordinates.Item2);
             UploadFileButton.IsEnabled = true;
+            ResetButton.IsEnabled = true;
+            //FileNameLabel.Text = gpsCoordinates.Item1 + " "+gpsCoordinates.Item2;
+        }
+
+        private async void OnResetClicked(object sender, EventArgs e)
+        {
+            UploadFileButton.IsEnabled = false;
+            ResetButton.IsEnabled = false;
+            SetLocationAsync();
         }
 
         public void OnLocationNameCompleted(object sender, EventArgs e)
@@ -32,6 +53,7 @@ namespace GeoDrive.MobileApp
         {
             FileNameLabel.TextColor = Color.FromRgb(0, 0, 0);
             UploadFileButton.IsEnabled = false;
+            ResetButton.IsEnabled = false;
             FileNameLabel.Text = "Loading ...";
             try
             {
@@ -67,6 +89,7 @@ namespace GeoDrive.MobileApp
             finally
             {
                 UploadFileButton.IsEnabled = true;
+                ResetButton.IsEnabled = true;
             }
         }
 
@@ -140,6 +163,37 @@ namespace GeoDrive.MobileApp
             }
 
             return "Unknown";
+        }
+
+        public async Task<Tuple<double, double>> GetCurrentLocation()
+        {
+            try
+            {
+                _isCheckingLocation = true;
+
+                GeolocationRequest request = new GeolocationRequest(GeolocationAccuracy.Medium, TimeSpan.FromSeconds(10));
+
+                _cancelTokenSource = new CancellationTokenSource();
+
+                Location location = await Geolocation.Default.GetLocationAsync(request, _cancelTokenSource.Token);
+
+                _isCheckingLocation = false;
+
+                if (location != null)
+                    return Tuple.Create(location.Latitude, location.Longitude);
+
+                return Tuple.Create(0.0, 0.0);
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
+
+        public void CancelRequest()
+        {
+            if (_isCheckingLocation && _cancelTokenSource != null && _cancelTokenSource.IsCancellationRequested == false)
+                _cancelTokenSource.Cancel();
         }
     }
 }
